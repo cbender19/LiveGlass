@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <!-- <script src="./triangle.js"></script> -->
+        <script src="./main.js" defer></script>
+    </head>
+    <body onload="builder()">
+        <div class="container">
+            <div id="background" class="background active">
+                <canvas id="canvas"></canvas>
+            </div>
+            <div id="foreground" class="foreground idle">
+                <div id="desktop" class="display">
+                    <button id="expand-btn" class="expand" onclick="swapState()"><i id="cover" class="fa-solid fa-caret-up"></i></button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
